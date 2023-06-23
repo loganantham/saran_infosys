@@ -1,0 +1,12 @@
+curl --location 'http://localhost:8080/api/students' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName": "Loganantham",
+    "middleName" : "",
+    "lastName": "C",
+    "email": "loganantham.c@gmail.com",
+    "address": "Tirupur",
+    "standard": 12,
+    "division": 1,
+    "age": 16
+}'
