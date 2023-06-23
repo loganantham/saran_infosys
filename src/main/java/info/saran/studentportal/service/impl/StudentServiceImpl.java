@@ -28,6 +28,7 @@ public class StudentServiceImpl implements StudentService {
     public Student updateStudent(Student student) {
         Student existingStudent = studentRepository.findById(student.getId()).get();
         existingStudent.setFirstName(student.getFirstName());
+        existingStudent.setMiddleName(student.getMiddleName());
         existingStudent.setLastName(student.getLastName());
         existingStudent.setEmail(student.getEmail());
         existingStudent.setLastName(student.getLastName());
